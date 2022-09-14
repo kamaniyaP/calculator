@@ -1,4 +1,4 @@
-package ETA_SB.jntu_calc_application;
+package eta_sb.jntu_calc_application;
 
 public class Calculator {
 	public double doAdd(double num1, double num2) {

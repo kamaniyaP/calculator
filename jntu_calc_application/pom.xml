@@ -8,7 +8,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<name>jntu_calc_application</name>
-	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
 	<properties>
@@ -17,10 +16,10 @@
 		<maven.compiler.target>1.7</maven.compiler.target>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<sonar.projectKey>calculator</sonar.projectKey>
+		<sonar.projectKey>calculator_system92</sonar.projectKey>
 		<sonar.language>java</sonar.language>
 		<sonar.host.url>http://localhost:9000</sonar.host.url>
-		<sonar.login>paste your token here</sonar.login>
+		<sonar.login>sqp_f9c448b2faff91567b37c45f34a6977dba6811f8</sonar.login>
 
 	</properties>
 

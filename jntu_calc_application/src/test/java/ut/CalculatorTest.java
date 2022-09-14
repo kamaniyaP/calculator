@@ -1,12 +1,12 @@
 package ut;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import ETA_SB.jntu_calc_application.Calculator;
+import eta_sb.jntu_calc_application.Calculator;
 
 public class CalculatorTest {
 
@@ -24,22 +24,22 @@ public class CalculatorTest {
 
 	@Test
 	public void testAdd() {
-		assertTrue(cl.doAdd(1, 2) == 3);
+		assertEquals(3,(int)(cl.doAdd(1, 2)));
 	}	
 
 	@Test
 	public void testSub() {
-		assertTrue(cl.doSub(1, 1) == 0);
+		assertEquals(0,(int)(cl.doSub(1, 1)));
 	}
 
 	@Test
 	public void testMul() {
-		assertTrue(cl.doMul(9, 2) == 18);
+		assertEquals(18,(int)(cl.doMul(9, 2)));
 	}
 
 	@Test
 	public void testDiv() {
-		assertTrue(cl.doDiv(8, 2) == 4);
+		assertEquals(4, (int)(cl.doDiv(8, 2)));
 	}
 
 }

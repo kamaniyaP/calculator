@@ -1,4 +1,4 @@
-package ETA_SB.jntu_calc_application;
+package eta_sb.jntu_calc_application;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,18 +13,20 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class CalculatorServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	double res;
+	static double res;
     public CalculatorServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
-    public void doGet(HttpServletRequest request, HttpServletResponse response) 
+    @Override
+    public synchronized void doGet(HttpServletRequest request, HttpServletResponse response) 
     		throws IOException, ServletException 
     	{
     		doPost(request, response);
     	}
-	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    
+    @Override
+	public synchronized void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
 		String n1 = request.getParameter("no1");
 		String n2 = request.getParameter("no2");
@@ -43,6 +45,8 @@ public class CalculatorServlet extends HttpServlet {
 		case 4 : 
 			res = new Calculator().doDiv(Integer.parseInt(n1), Integer.parseInt(n2));
 			break;
+		default :
+			out.println("Enter a number from 1 to 4");
 		}
 		out.println(res);
 	}
