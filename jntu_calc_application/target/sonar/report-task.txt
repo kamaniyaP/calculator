@@ -1,6 +1,6 @@
-projectKey=calculator_system92
+projectKey=calculator92
 serverUrl=http://localhost:9000
 serverVersion=9.5.0.56709
-dashboardUrl=http://localhost:9000/dashboard?id=calculator_system92
-ceTaskId=AYM7fF56wSOmwLUKkSwE
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYM7fF56wSOmwLUKkSwE
+dashboardUrl=http://localhost:9000/dashboard?id=calculator92
+ceTaskId=AYNArCcH4XFS4qRVP7ss
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYNArCcH4XFS4qRVP7ss
