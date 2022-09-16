@@ -6,7 +6,7 @@ public class Calculator {
 	}
 
 	public double doSub(double num1, double num2) {
-		//comment line
+		//comment linee
 		return num1 - num2;
 	}
 
